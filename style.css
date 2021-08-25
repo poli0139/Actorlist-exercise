@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: url("assets/fonts/NeueHaasGrotesk/NeueHaasDisplayLight.woff")
+      format("ttf"),
+    url("NeueHaasDisplayMediu.woff") format("woff");
+}
+body {
+  background-color: #f6f6f6;
+  display: flex;
+}
+section {
+  width: 50%;
+  align-content: center;
+}
+ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+li {
+  background-color: white;
+  font-family: "Neue Haas Grotesk Display Pro Medium", sans-serif;
+  letter-spacing: 3px;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 2px 2px 5px #cacaca;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+li:hover {
+  box-shadow: 4px 4px 3px #cacaca;
+  transition: all 0.3s;
+}
+.detailbox {
+  width: 50%;
+  margin: auto;
+  padding: 2rem;
+  margin-top: 40%;
+  font-family: "Neue Haas Grotesk Display Pro Medium", sans-serif;
+  text-align: center;
+  box-shadow: 3px 3px 7px #cacaca;
+  background-color: white;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
