@@ -13,8 +13,8 @@ function showActors(actors) {
   });
 }
 
-document.querySelector(".actortemplate").addEventListener("click", showDetails);
-function showDetails() {
-  document.querySelector(".detailbox").classList.remove("hidden");
-  document.querySelector("detailbox").classList.add("show");
-}
+// document.querySelector(".actortemplate").addEventListener("click", showDetails);
+// function showDetails() {
+//   document.querySelector(".detailbox").classList.remove("hidden");
+//   document.querySelector("detailbox").classList.add("show");
+// }
