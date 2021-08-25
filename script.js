@@ -9,12 +9,18 @@ function showActors(actors) {
   actors.forEach((actor) => {
     const copy = template.cloneNode(true);
     copy.querySelector(".fullname").textContent = actor.fullname;
+    copy.querySelector(".actor").addEventListener("click", showDetails);
     document.querySelector(".actorlist").appendChild(copy);
+    function showDetails(e) {
+      document.querySelector(".detailbox").classList.remove("hidden");
+      document.querySelector(".detailbox").classList.add("show");
+      document.querySelector(".detailbox h2").textContent = actor.fullname;
+      document.querySelector(".detailbox span").textContent = actor.movie;
+      document.querySelector(".close").addEventListener("click", closeInfo);
+    }
   });
 }
-
-// document.querySelector(".actortemplate").addEventListener("click", showDetails);
-// function showDetails() {
-//   document.querySelector(".detailbox").classList.remove("hidden");
-//   document.querySelector("detailbox").classList.add("show");
-// }
+function closeInfo() {
+  document.querySelector(".detailbox").classList.remove("show");
+  document.querySelector(".detailbox").classList.add("hidden");
+}

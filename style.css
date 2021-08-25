@@ -7,10 +7,12 @@
 body {
   background-color: #f6f6f6;
   display: flex;
+  padding: 0;
 }
 section {
   width: 50%;
   align-content: center;
+  padding: 0;
 }
 ul {
   list-style: none;
@@ -32,14 +34,27 @@ li:hover {
   transition: all 0.3s;
 }
 .detailbox {
-  width: 50%;
-  margin: auto;
-  padding: 2rem;
-  margin-top: 40%;
+  width: 40%;
+  margin: 40vh 2vw auto 2vw;
+  padding: 1rem;
   font-family: "Neue Haas Grotesk Display Pro Medium", sans-serif;
   text-align: center;
   box-shadow: 3px 3px 7px #cacaca;
   background-color: white;
+  position: fixed;
+}
+button {
+  background: none;
+  border: none;
+  border-bottom: solid black 1px;
+  font-size: medium;
+  font-family: "Neue Haas Grotesk Display Pro Medium", sans-serif;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button:hover {
+  text-shadow: 1px 1px 2px #cacaca;
+  transition: all 0.3s;
 }
 .hidden {
   display: none;
