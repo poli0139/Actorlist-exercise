@@ -1,4 +1,4 @@
-fetch("actors.JSON")
+fetch("actors-list.JSON")
   .then((res) => res.json())
   //   .then((data) => console.log(data));
   .then((response) => {
